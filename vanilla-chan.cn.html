@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="icon"
+        href="https://vanilla-picture-with-picgo.oss-cn-shenzhen.aliyuncs.com/common/Noir-transparent-small.png"
+        type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla_chan</title>
+    <script defer src="https://was.arisumika.top/script.js" data-website-id="f0585594-f77e-4135-acc8-a37f4ceb013b"></script>
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('https://vanilla-picture-with-picgo.oss-cn-shenzhen.aliyuncs.com/cdn-hexo/fonts/Ubuntu-B.ttf') format('truetype');
+            /* 确保替换为实际的文件路径 */
+            font-weight: bold;
+            /* 指定字体粗细 */
+            font-style: normal;
+            /* 指定字体样式 */
+        }
+
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Ubuntu', Arial, sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .bg {
+            position: relative;
+            height: 100%;
+        }
+
+        .bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('sources/ord2(bigjpgx4) (2560x1440)(jpg50).jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(1px);
+            /* 应用高斯模糊 */
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            background: rgba(243, 220, 224, 0.60);
+            /* 半透明黑色背景 */
+            border-radius: 16px;
+            /* 圆角 */
+            padding: 20px;
+            /* 内边距 */
+            max-width: 512px;
+            /* 最大宽度 */
+            max-height: 420px;
+            /* 最大高度 */
+            margin: auto;
+            /* 水平居中 */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            /* 阴影效果 */
+        }
+
+        .content img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            /* 添加阴影效果 */
+        }
+
+        .content .icon-wechat {
+            margin: 4px auto;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            object-fit: cover;
+            box-shadow: 0 0 0 0;
+        }
+
+        .content h1 {
+            font-size: 2.2em;
+        }
+
+        .content h2 {
+            font-size: 1.2em;
+            color: #f0f0f0;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .links a {
+            position: relative;
+            /* 使链接支持绝对定位的子元素 */
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .divider {
+            height: 4px;
+            /* 分隔线的厚度 */
+            background-color: rgba(255, 255, 255, 0.6);
+            /* 半透明的白色 */
+            margin: 20px auto;
+            /* 上下边距20px，左右自动居中 */
+            width: 75%;
+            /* 分隔线宽度为容器宽度的50% */
+        }
+
+        .tooltip-text {
+            position: absolute;
+            bottom: -32px;
+            /* 根据实际情况调整位置 */
+            left: 50%;
+            transform: translateX(-50%);
+            visibility: hidden;
+            background-color: rgba(41, 41, 41, 0.9);
+            color: white;
+            text-align: center;
+            border-radius: 3px;
+            padding: 5px 10px;
+            white-space: nowrap;
+            /* 防止文本换行 */
+            opacity: 0;
+            transition: opacity 0.5s, visibility 0.5s;
+            min-width: 40px;
+            /* 设置最小宽度 */
+            font-size: 18px;
+            /* 设置更小的字体大小 */
+        }
+
+        .links a:hover .tooltip-text {
+            visibility: visible;
+            /* 鼠标悬停时显示 */
+            opacity: 1;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 调整最后一个链接的图标位置 */
+        .icon-tools {
+            transform: translateY(2px); /* 向下移动 几px */
+        }
+
+        .footer {
+            font-family: Arial, sans-serif;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="content">
+            <img src="https://vanilla-picture-with-picgo.oss-cn-shenzhen.aliyuncs.com/common/Noir(512px).png" alt="头像">
+            <h1>Vanilla_Yukirin</h1>
+            <h2>AFOIer | ACMer | MCMer</h2>
+            <div class="divider"></div>
+            <div class="links">
+                <a href="http://vanilla-chan.cn/blog/" class="icon-link">
+                    <svg t="1718644366070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="21505" width="48" height="48">
+                        <path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#f29ac3" p-id="21506"
+                            data-spm-anchor-id="a313x.search_index.0.i15.e5443a81tHPJfj" class="selected"></path>
+                        <path
+                            d="M687.476364 232.727273c-83.083636 0-150.341818 23.272727-150.341819 50.734545V791.272727c0-27.927273 67.258182-50.734545 150.341819-50.734545S837.818182 763.345455 837.818182 791.272727V283.461818C837.818182 256 770.56 232.727273 687.476364 232.727273zM336.523636 232.727273C253.44 232.727273 186.181818 256 186.181818 283.461818V791.272727c0-27.927273 67.258182-50.734545 150.341818-50.734545s150.341818 23.272727 150.341819 50.734545V283.461818C486.865455 256 418.909091 232.727273 336.523636 232.727273z"
+                            fill="#ffffff" p-id="21507" data-spm-anchor-id="a313x.search_index.0.i12.e5443a81tHPJfj"
+                            class=""></path>
+                    </svg>
+                    <span class="tooltip-text">Blog</span>
+                </a>
+                <a href="https://www.cnblogs.com/Vanilla-chan" class="icon-link">
+                    <svg t="1718636228172" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="19085" width="50" height="50">
+                        <path
+                            d="M851.404 172.596c-187.462-187.461-491.346-187.461-678.808 0-187.461 187.462-187.461 491.346 0 678.808 187.462 187.461 491.346 187.461 678.808 0 187.461-187.462 187.461-491.346 0-678.808zM387.33 728.087a47.084 47.084 0 1 1-66.633-66.502 47.084 47.084 0 0 1 66.633 66.502z m205.527 1.397a38.75 38.75 0 0 1-76.625-11.52h-0.044a6.545 6.545 0 0 0-0.044 0.305v-0.349c0.306-2.618 2.051-20.727-2.967-44.99a174.24 174.24 0 0 0-48.567-89.28 172.102 172.102 0 0 0-88.8-48.305 156.698 156.698 0 0 0-42.458-2.923 38.662 38.662 0 0 1-35.39-65.324 38.618 38.618 0 0 1 21.12-10.822v-0.218c4.452-0.742 111.142-16.45 200.335 72.742 89.018 89.018 74.182 196.145 73.44 200.727z m175.2 7.592a38.75 38.75 0 0 1-65.673 21.382 39.49 39.49 0 0 1-11.65-33.73c0.087-0.35 5.105-37.484-5.062-88.975-13.31-67.375-45.295-126.895-94.953-176.902-50.007-49.702-109.527-81.644-176.945-94.953-51.491-10.167-88.582-5.193-89.019-5.149h0.219-0.044a39.927 39.927 0 0 1-44.684-32.902 38.836 38.836 0 0 1 32.204-44.378c1.92-0.305 47.869-7.33 111.273 4.364a411.753 411.753 0 0 1 106.254 34.952 425.76 425.76 0 0 1 114.633 82.255l0.916 0.96 0.96 0.873a425.89 425.89 0 0 1 82.255 114.72c16.407 33.6 28.145 69.294 34.996 106.21 11.651 63.404 4.67 109.353 4.32 111.273z"
+                            fill="#1296DB" p-id="19086"></path>
+                    </svg>
+                    <span class="tooltip-text">Cnblog</span>
+                </a>
+                <a href="https://github.com/Vanilla-Yukirin" class="icon-link">
+                    <svg t="1718635461224" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="4234" width="52" height="52">
+                        <path
+                            d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                            p-id="4235"></path>
+                    </svg>
+                    <span class="tooltip-text">Github</span>
+                </a>
+                <a href="http://vanilla-chan.cn/blog/about/" class="icon-link">
+                    <img src="sources/wechat.jpg" class="icon-wechat"></img>
+                    <span class="tooltip-text">About me</span>
+                </a>
+                <a href="http://vanilla-chan.cn/blog/links/" class="icon-link">
+                    <svg t="1718643994627" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="4284" width="54" height="54">
+                        <path
+                            d="M512 67.2c-246.4 0-448 201.6-448 448s201.6 448 448 448 448-201.6 448-448c0-249.6-201.6-448-448-448z m115.2 633.6c-3.2 3.2-6.4 6.4-12.8 6.4H304c-3.2 0-9.6 0-9.6-6.4-3.2-3.2-3.2-6.4-3.2-12.8 12.8-60.8 51.2-105.6 105.6-128-38.4-22.4-64-64-64-112 0-70.4 57.6-128 128-128s128 57.6 128 128c0 48-25.6 89.6-64 112 54.4 22.4 96 67.2 108.8 128 0 6.4-3.2 9.6-6.4 12.8z m28.8-134.4c-9.6 0-16-6.4-16-16s6.4-16 16-16c41.6-3.2 70.4-35.2 70.4-76.8 0-38.4-32-73.6-70.4-76.8-9.6 0-16-9.6-16-16 0-9.6 9.6-16 16-16 54.4 3.2 99.2 51.2 99.2 108.8 3.2 57.6-41.6 105.6-99.2 108.8z m108.8 102.4h-3.2c-6.4 0-12.8-6.4-16-12.8-3.2-16-16-35.2-28.8-41.6-6.4-3.2-9.6-12.8-6.4-22.4 3.2-6.4 16-9.6 22.4-6.4 22.4 12.8 38.4 41.6 44.8 64 0 9.6-3.2 19.2-12.8 19.2z"
+                            fill="#1296db" p-id="4285"></path>
+                    </svg>
+                    <span class="tooltip-text">Friends</span>
+                </a>
+                
+                <a href="http://vanilla-chan.cn/blog/tools/" class="icon-tools">
+                    <svg t="1755182730887" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2963" width="46" height="46">
+                    <!-- 背景圆形 -->
+<circle cx="512" cy="512" r="512" fill="#1296db" />
+<!-- 扳手图标 -->
+<g transform="translate(180,180) scale(0.65)">
+<path d="M916.422378 713.465454l-200.653973-200.639646c12.921287-36.074613 19.461237-73.782424 19.461237-112.426559 0-184.603415-150.179394-334.799182-334.799182-334.799182-45.959751 0-90.675162 9.263991-132.8671 27.525913l-19.960611 8.640798c-0.031722 0.031722 0.124843 0.047072 0.062422 0.077771-1.898233 0.826831-3.674693 2.025123-5.231141 3.581572-6.602372 6.615675-6.602372 17.374716 0.032746 24.007787 0.093121 0.094144-0.094144 0.140193-0.032746 0.233314l187.452299 187.453323L317.133336 429.856142 133.447826 246.156306c-0.280386 0.031722-0.560772 0.047072-0.934279-0.326435-7.78429-7.78429-20.395516-7.78429-28.181853 0-2.116197 2.133593-3.674693 4.609994-4.63967 7.256264-0.093121 0.248663-0.217964 0.124843-0.341784 0.140193l-6.197142 14.323217c-18.24555 42.145889-27.52489 86.860277-27.52489 132.851751 0 184.588065 150.180418 334.799182 334.799182 334.799182 38.611389 0 76.3192-6.538927 112.438838-19.461237l200.654996 200.626343c27.092032 27.088962 63.119573 42.035372 101.450577 42.035372 0 0 0 0 0.032746 0 38.299281 0 74.358545-14.94641 101.449553-42.035372C972.347085 860.439854 972.347085 769.422907 916.422378 713.465454zM871.365182 871.275643c-15.07023 15.071254-35.093263 23.352871-56.360635 23.352871l-0.032746 0c-21.298072 0-41.320081-8.28264-56.359612-23.352871l-230.764757-230.735082-19.896142 8.594749c-34.158984 14.789844-70.342068 22.292726-107.521852 22.292726-149.432381 0-271.027763-121.562637-271.027763-271.02674 0-20.769023 2.335185-41.212634 6.974855-61.141522l168.582533 168.614256c7.068999 5.637394 16.782222 5.714142 23.976064 0.35918l177.239703-177.23868c0.062422-0.062422-0.063445-0.141216 0-0.202615 7.223518-7.224542 7.441483-18.497283 1.24434-26.328645L339.272565 136.330992c19.960611-4.623297 40.386826-6.958482 61.155848-6.958482 149.432381 0 271.028786 121.581056 271.028786 271.027763 0 37.226856-7.505951 73.392544-22.294772 107.491153l-8.594749 19.895119 230.765781 230.765781C902.410246 789.631158 902.410246 840.197834 871.365182 871.275643z" fill="#d3d3d3" p-id="2964">
+</g>
+</path>
+</svg>
+                    <span class="tooltip-text">Tools</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">赣ICP备2024036347号-1 </a>
+        <img src="sources/beian_icon_16x16.png" style="display: inline-block;">
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010802001026" rel="noopener"
+            target="_blank">赣公网安备36010802001026号</a>
+        <img src="sources/meo_icon120x120.png" width="20" height="20" style="display: inline-block;">
+        <a href="https://icp.gov.moe/?keyword=20245311" target="_blank">萌ICP备20245311号</a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/54a274bba8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
